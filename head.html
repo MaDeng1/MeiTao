@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="css/head.css" rel="stylesheet" />
+    <script type="text/javascript"  src="gs/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#tright>ul>li.menulist").hover(function () {
+                $(this).children("ul").stop().slideDown(500);
+            }, function () {
+                $(this).children("ul").stop().slideUp(500);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="head">
+        <div id="all">
+             <div id="menu">
+                 <a id="chengshi" href="#">武汉[切换城市]</a>
+                 <div id="tright">
+                     <ul>
+                         <li><a href="#">美淘，每天淘一次</a></li>
+                         <li class="menulist"><a href="Main.html" target="_blank">我的美淘</a>
+                             <ul>
+                                 <li><a href="#">我的订单</a></li>
+                                 <li><a href="#">我的收藏</a></li>
+                                 <li><a href="#">我的余额</a></li>
+                             </ul>
+                         </li>
+                         <li class="gouwu"><span></span><a href="cart.html" target="_parent">购物车</a></li>
+                         <li><a href="Login.html" target="_parent">[登录]</a></li>
+                         <li><a href="Login.html" target="_parent">[注册]</a></li>
+                     </ul>
+                 </div>
+             </div>
+        </div>
+         <div id="search">
+             <a id="logo" href="#"></a>
+             <ul>
+                 <li>
+                     <form>
+                         <input type="text" name="name" id="name"/>
+                         <input type="button" name="sousou" value="搜搜"  id="sousou"/>
+                     </form>
+                 </li>
+                 <li class="word"><a href="#">旅游</a></li>
+                 <li class="word"><a href="#">酒店</a></li>
+                 <li class="word"><a href="#">KTV</a></li>
+             </ul>
+         </div>
+    </div>
+</body>
+</html>

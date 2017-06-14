@@ -1,0 +1,443 @@
+﻿        /*导航*/
+        #allnav {
+            width: 100%;
+            background-color: #ff7701;
+            height: 39px;
+            border: 1px solid #ff7701;
+        }
+
+        #nav {
+            width: 985px;
+            height: 39px;
+            margin: 0 auto;
+        }
+
+            #nav a {
+                font-family: "微软雅黑";
+                color: white;
+            }
+
+            #nav ul li {
+                float: left;
+                line-height: 39px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            #nav a:hover {
+                color: black;
+            }
+
+        .fenlei2 {
+            margin-left: 5px;
+        }
+
+
+        .menulist {
+            position: relative;
+        }
+
+            .menulist ul {
+                background-color: #ff7701;
+                text-align: center;
+                top: 35px;
+                left: -22px;
+                position: absolute;
+                width: 128px;
+                display: none;
+                z-index:100;
+            }
+                            #nav ul li.menulist span {
+                background-image:url(../images/arrow-down.gif);
+                background-repeat:no-repeat;
+                display:block;
+                width:15px;
+                height:10px;
+                float:right;
+                margin-top:15px;
+                }
+        #nav ul li ul li {
+            float: none;
+        }
+
+            #nav ul li ul li a {
+                float: none;
+            }
+
+        #middle {
+            width: 985px;
+            margin: 0 auto;
+            height: auto;
+            /*border: 1px solid blue;*/
+            overflow: hidden;
+        }
+        /*中右*/
+        #side {
+            width: 240px;
+            float: right;
+            /*border: 1px solid #6f9;*/
+            height: 2020px;
+        }
+
+        #hottopic {
+            border: 1px solid #ccc;
+            margin-bottom: 17px;
+        }
+
+        #hotbuy {
+            border: 1px solid #ccc;
+            margin-top: 17px;
+            margin-bottom: 17px;
+        }
+
+        #hottopic h2 {
+            margin-left: 17px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        #hotbuy h2 {
+            height: 40px;
+            line-height: 40px;
+        }
+
+        #hotbuy {
+            padding-left: 17px;
+            padding-right: 17px;
+        }
+
+            #hotbuy dl dd {
+                line-height: 25px;
+                padding-left: 17px;
+                font-size: 13px;
+            }
+
+            #hotbuy dl {
+                border-bottom: 1px dashed #ccc;
+                margin-bottom: 11px;
+            }
+
+                #hotbuy dl.last {
+                    border: none;
+                }
+
+        #price {
+            background-image: url(../images/pricebg.JPG);
+            background-repeat: no-repeat;
+            height: 86px;
+            padding-top: 70px;
+            padding-left: 70px;
+            margin-bottom: 14px;
+            border: 1px solid #ccc;
+        }
+
+            #price a {
+                color: red;
+            }
+
+                #price a:hover {
+                    text-decoration: underline;
+                }
+
+            #price ul {
+                height: 66px;
+                overflow: hidden;
+            }
+
+                #price ul li {
+                    height: 22px;
+                    line-height: 22px;
+                }
+
+        #lastview {
+            border: 1px solid #ccc;
+            padding-right: 17px;
+            padding-left: 17px;
+        }
+
+            #lastview h2 {
+                float: left;
+                height: 40px;
+                line-height: 40px;
+            }
+
+            #lastview p {
+                float: right;
+                height: 40px;
+                line-height: 40px;
+            }
+
+            #lastview dl {
+                width: 200px;
+                height: 70px;
+                margin-bottom: 11px;
+                clear: both;
+                border-bottom: 1px dashed #ccc;
+            }
+
+                #lastview dl dt {
+                    float: left;
+                    margin-right: 10px;
+                }
+
+                #lastview dl dd {
+                    font-size: 11px;
+                    height: 25px;
+                    line-height: 25px;
+                }
+
+                #lastview dl.last1 {
+                    border: none;
+                }
+        /*中左*/
+        #left {
+            width: 733px;
+            float: left;
+            height: auto;
+            overflow: hidden;
+            /*border: 1px solid red;*/
+        }
+            /*第一块*/
+            #left #one {
+                width: 730px;
+                height: auto;
+                border: 1px solid #dedede;
+                overflow: hidden;
+            }
+
+        #one h2 {
+            border-bottom: 1px dashed #dedede;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+
+
+        #one ul.picture {
+            float: left;
+            width: 360px;
+            padding: 13px;
+        }
+
+            #one ul.picture li {
+                float: left;
+            }
+
+                #one ul.picture li.ps {
+                    margin-right: 10px;
+                }
+
+        #one ul.info {
+            float: right;
+            padding: 13px;
+            margin-top: -323px;
+        }
+
+            #one ul.info li {
+                height: 25px;
+                line-height: 25px;
+            }
+
+                #one ul.info li.buy {
+                    height: 40px;
+                    margin-top: 10px;
+                }
+
+                #one ul.info li.txt {
+                    height: 50px;
+                    border: 1px solid #d0d1a7;
+                    background-color: #feffed;
+                    padding: 10px;
+                    width: 310px;
+                }
+
+                #one ul.info li.span {
+                    font: bold 16px Verdana;
+                }
+        /*第二块*/
+        #left #two {
+            width: 730px;
+            height: auto;
+            border: 1px solid #dedede;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        #two #menu {
+            height: 28px;
+            width: 100%;
+            background-image: url(../images/tabbg.gif);
+            background-repeat: no-repeat;
+        }
+            #two #menu ul {
+                list-style:none;
+               /*border:1px solid blue;*/
+               overflow: hidden;
+               margin-left:-3px;
+            }
+
+            #two #menu li {
+                float: left;
+                width: 114px;
+                 text-align: center;
+                height: 27px;
+                line-height: 27px;
+                color: #949696;
+                font-weight: bold;
+                
+            }
+
+
+                #two #menu li:hover {
+                    width: 116px;
+                    border-left: 1px solid #a8c29f;
+                    border-top: 1px solid #a8c29f;
+                    border-right: 1px solid #a8c29f;
+                    background-image: url(../images/tabc.gif);
+                    background-repeat: no-repeat;
+                }
+
+        #two #tab1 {
+            padding-left: 17px;
+        }
+
+            #two #tab1 dl dt {
+                float: left;
+                margin-right: 10px;
+            }
+
+            #two #tab1 dl dd {
+                height: 40px;
+                overflow: hidden;
+                text-align: center;
+            }
+
+                #two #tab1 dl dd span {
+                    font: bold 15px Verdana;
+                    line-height: 40px;
+                    color: #f90;
+                }
+
+                #two #tab1 dl dd:hover {
+                    height: auto;
+                    cursor: pointer;
+                }
+
+            #two #tab1 h2 {
+                margin-bottom: 10px;
+                margin-top: 30px;
+            }
+
+        #two #tab2 {
+            margin-top: 20px;
+            padding-left: 17px;
+        }
+
+            #two #tab2 h2 {
+                margin-top: 10px;
+                height: 40px;
+                line-height: 40px;
+                clear: left;
+            }
+
+
+
+            #two #tab2 table {
+                width: 700px;
+            }
+
+                #two #tab2 table td, th {
+                    border: 1px solid #dedede;
+                    height: 25px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+
+        #two p {
+            text-align: right;
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            margin-right: 17px;
+        }
+
+        #two ul {
+            list-style: disc;
+            margin-left: 30px;
+        }
+
+            #two ul li {
+                height: 30px;
+                line-height: 30px;
+            }
+
+        #two #tab3 {
+            padding-left: 17px;
+            padding-top: 20px;
+            border: 1px solid #dedede;
+            background-color: #faf8a1;
+            margin-left: 17px;
+            margin-top: 10px;
+        }
+
+            #two #tab3 h3 {
+                height: 25px;
+                line-height: 25px;
+            }
+
+            #two #tab3 ul {
+                margin-left: 10px;
+            }
+
+                #two #tab3 ul li {
+                    font-size: 12px;
+                }
+
+            #two #tab3 h3 span {
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+        #two #tab4 {
+            padding-left: 17px;
+        }
+
+            #two #tab4 h2 {
+                height: 40px;
+                line-height: 40px;
+            }
+
+            #two #tab4 font {
+                display: block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+        #two #tab5 {
+            padding-left: 17px;
+            margin-top: 20px;
+        }
+
+            #two #tab5 h2 {
+                height: 40px;
+                line-height: 40px;
+            }
+            #two #tab5 img {
+                padding-bottom:20px;
+                border-bottom:1px dashed #dedede;
+            }
+            #two #tab5 form input {
+                width:23px;
+                height:23px;
+                margin-right:20px;
+                border:1px solid #dedede;
+            }
+                #two #tab5 form input:hover {
+                    border:1px solid #ff7701;
+                }
+            #two #tab5 form {
+                text-align:center;
+                margin-bottom:10px;
+                margin-top:10px;
+            }

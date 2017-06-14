@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>美淘网登陆/注册</title>
+    <meta charset="utf-8" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/Login.css" rel="stylesheet" />
+        <script src="gs/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        
+        $(function () {
+            //二级菜单下拉动画
+            $("#nav>ul>li.menulist").hover(function () {
+                $("#nav>ul>li.menulist>ul").stop().slideDown(500);
+            }, function () {
+                $("#nav>ul>li.menulist>ul").stop().slideUp(500);
+            });
+
+            //注册按钮高光显示
+            $("#zhuce input[name='btnzhuce']").each(function () {
+                $(this).hover(function () {
+                    $(this).attr("src", "images/reg_over.jpg");
+                }, function () {
+                    $(this).attr("src", "images/register.jpg");
+                });
+            });
+            //登录按钮高光显示
+            $("#denglu input[name='btnLogin']").each(function () {
+                $(this).hover(function () {
+                    $(this).attr("src", "images/Login_over.jpg");
+                }, function () {
+                    $(this).attr("src", "images/Login.jpg");
+                });
+            });
+
+            //切换注册方式按钮高光显示
+            $("#zhuce a[name='email']").click(function () {
+                $(this).addClass("current");
+                $("#zhuce a[name='phone']").removeClass("current");
+            });
+            $("#zhuce a[name='phone']").click(function () {
+                $(this).addClass("current");
+                $("#zhuce a[name='email']").removeClass("current");
+            });
+
+            //切换登录方式按钮高光显示
+            $("#denglu a[name='email']").click(function () {
+                $(this).addClass("current");
+                $("#denglu a[name='phone']").removeClass("current");
+                $("#email").css("display", "block");
+                $("#phone").css("display", "none");
+            });
+            $("#denglu a[name='phone']").click(function () {
+                $(this).addClass("current");
+                $("#denglu a[name='email']").removeClass("current");
+                $("#phone").css("display", "block");
+                $("#email").css("display", "none");
+            });
+
+        });
+        //表单验证
+        function email() {
+            var email = $("txtemail").val();
+            
+        }
+    </script>
+</head>
+<body>
+    <!--头部-->
+    <iframe src="head.html" width="100%" frameborder="0" scrolling="no" height="115px"></iframe>
+    <!--导航栏-->
+    <div id="allnav">
+        <div id="nav">
+            <ul>
+                <!--二级菜单-->
+                <li class="menulist">
+                    <a href="#" class="fenlei2">全部商品分类</a><span></span>
+                    <ul>
+                        <li><a href="#">美食</a></li>
+                        <li><a href="#">旅游</a></li>
+                        <li><a href="#">酒店</a></li>
+                        <li><a href="#">电影</a></li>
+                        <li><a href="#">KTV</a></li>
+                        <li><a href="#">时尚</a></li>
+                        <li><a href="#">生活服务</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">团购</a></li>
+                <li><a href="#">美食</a></li>
+                <li><a href="#">电影</a></li>
+                <li><a href="#">KTV</a></li>
+                <li><a href="#">酒店订票</a></li>
+                <li><a href="#">购物</a></li>
+                <li><a href="#">品牌特卖</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--中部-->
+    <div id="middle">
+        <!--注册-->
+        <div id="zhuce">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>注册新用户</legend>
+                    <ul>
+                        <li><a href="#emailreg" class="current" name="email">邮箱注册</a></li>
+                        <li><a href="#phonereg" name="phone">手机注册</a></li>
+                    </ul>
+                    <div class="box">
+                        <!--通过邮箱注册-->
+                        <div id="emailreg">
+                            <p>
+                                <label for="txtemail">邮箱：</label>
+                                <input type="text" name="" class="txt" id="txtemail" />
+                                <span id="txtemail_span">推荐使用qq邮箱</span>
+                            </p>
+                            <p>
+                                <label for="username">用户名：</label>
+                                <input type="text" name="" class="txt" id="username" />
+                                <span  id="username_span">4-16字符，不能包含数字</span>
+                            </p>
+                            <p>
+                                <label for="pwd1">创建密码：</label>
+                                <input type="text" name="" class="txt" id="pwd1" />
+                                <span  id="pwd1_span">6-32字符</span>
+                            </p>
+                            <p>
+                                <label for="pwd2">确认密码：</label>
+                                <input type="text" name="" class="txt" id="pwd2" />
+                                <span  id="pwd2_span">请再次输入密码</span>
+                            </p>
+                            <p>
+                                <label for="city">所在城市：</label>
+                                <select class="txt" id="city">
+                                    <option>--省--</option>
+                                    <option>湖北</option>
+                                    <option>北京</option>
+                                </select>
+                                <select class="txt">
+                                    <option>--市区--</option>
+                                    <option>武汉</option>
+                                    <option>北京</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label>验证码：</label>
+                                <input type="text" name="" class="txt check" />
+                                <img src="images/code_img.gif" style="vertical-align: bottom" />
+                            </p>
+                            <p>
+                                <input type="image" class="btn" src="images/register.jpg" name="btnzhuce"/>
+                                <a href="#">《美淘网用户协议》</a>
+                            </p>
+                        </div>
+                        <!--通过手机注册-->
+                        <div id="phonereg">
+                            <p>
+                                <label>电话：</label>
+                                <input type="text" name="" class="txt" />
+                                <span>用于登录和找回密码，不会公开</span>
+                            </p>
+                            <p>
+                                <label>短信验证码：</label>
+                                <input type="text" name="" class="txt" />
+                                <span>请输入手机收到的验证码</span>
+                            </p>
+                            <p>
+                                <label>创建密码：</label>
+                                <input type="text" name="" class="txt" />
+                                <span>6-32字符，可使用字母、数字、符号</span>
+                            </p>
+                            <p>
+                                <label>确认密码：</label>
+                                <input type="text" name="" class="txt" />
+                                <span>请再次输入密码</span>
+                            </p>
+                            <p>
+                                <input type="image" class="btn" src="images/register.jpg" name="btnzhuce"/>
+                                <a href="#">《美淘网用户协议》</a>
+                            </p>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <!--登录-->
+        <div id="denglu">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>登录MEITAO.COM</legend>
+                    <ul>
+                        <li><a href="#email" class="current" name="email">邮箱用户</a></li>
+                        <li><a href="#phone" name="phone">手机用户</a></li>
+                    </ul>
+                    <div class="box">
+                            <!--通过邮箱登录-->
+                        <div id="email">
+                            <p>
+                                <label for="email1">邮箱：</label>
+                                <input type="text" name="" class="txt" id="email1" />
+                            </p>
+                            <p>
+                                <label for="pwd3">密码：</label>
+                                <input type="text" name="" class="txt" id="pwd3" />
+                            </p>
+                            <p>
+                                <input type="image" class="btn" src="images/login_over.jpg" name="btnLogin"/>
+                                <a href="#">忘记密码？</a>
+                            </p>
+                        </div>
+                        <!--通过手机登录-->
+                        <div id="phone">
+                            <p>
+                                <label for="pnone1">手机号：</label>
+                                <input type="text" name="" class="txt" id="phone1" />
+                            </p>
+                            <p>
+                                <label for="pwd4">密码：</label>
+                                <input type="text" name="" class="txt" id="pwd4" />
+                            </p>
+                            <p>
+                                <input type="image" class="btn" src="images/login_over.jpg" name="btnLogin"/>
+                                <a href="#">忘记密码？</a>
+                            </p>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        
+
+            
+        </div>
+    </div>
+    <!--尾部-->
+    <iframe src="foot.html" width="100%" frameborder="0" scrolling="no" height="200px"></iframe>
+</body>
+</html>

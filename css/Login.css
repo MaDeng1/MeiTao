@@ -1,0 +1,184 @@
+﻿  #middle {
+            width: 985px;
+            margin: 0 auto;
+            height: auto;
+            /*border: 1px solid blue;*/
+            overflow: hidden;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        /*导航*/
+        #allnav {
+            width: 100%;
+            background-color: #ff7701;
+            height: 39px;
+            border: 1px solid #ff7701;
+        }
+
+        #nav {
+            width: 985px;
+            height: 39px;
+            margin: 0 auto;
+        }
+
+            #nav a {
+                font-family: "微软雅黑";
+                color: white;
+            }
+
+            #nav ul li {
+                float: left;
+                line-height: 39px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            #nav a:hover {
+                color: black;
+            }
+
+        .fenlei2 {
+            margin-left: 5px;
+        }
+                        #nav ul li.menulist span {
+                background-image:url(../images/arrow-down.gif);
+                background-repeat:no-repeat;
+                display:block;
+                width:15px;
+                height:10px;
+                float:right;
+                margin-top:15px;
+                }
+
+
+        .menulist {
+            position: relative;
+        }
+
+            .menulist ul {
+                background-color: #ff7701;
+                text-align: center;
+                top: 35px;
+                left: -22px;
+                position: absolute;
+                width: 128px;
+                display: none;
+                z-index:100;
+            }
+
+        #nav ul li ul li {
+            float: none;
+        }
+
+            #nav ul li ul li a {
+                float: none;
+            }
+        /*注册*/
+        #zhuce {
+            width: 550px;
+            float: left;
+            color: #333;
+        }
+
+        #middle legend {
+            height: 36px;
+            font: bold 20px/36px Verdana;
+            color: #f8ae00;
+            margin-left: 20px;
+        }
+
+        #middle ul {
+            overflow: hidden;
+            margin-right: 12px;
+            width: 100%;
+        }
+
+            #middle ul li {
+                float: left;
+            }
+
+                #middle ul li a {
+                    display: block;
+                    width: 75px;
+                    height: 25px;
+                    line-height: 25px;
+                    text-align: center;
+                    margin-right: 5px;
+                    background-image: url(../images/gray.gif);
+                }
+
+                    #middle ul li a.current {
+                        color: white;
+                        background-image: url(../images/current.gif);
+                    }
+
+        #zhuce .box {
+            background: #fafafa;
+            overflow: hidden;
+            height: 302px;
+        }
+
+            #zhuce .box #emailreg, #zhuce .box #phonereg {
+                padding: 15px 30px;
+                height: 302px;
+            }
+
+        #emailreg p {
+            margin-bottom: 10px;
+        }
+
+        #phonereg p {
+            margin-bottom: 22px;
+        }
+
+        #middle .txt {
+            border: 1px solid #a5afc3;
+            height: 25px;
+            line-height: 25px;
+        }
+
+        #middle select.txt {
+            width: 80px;
+        }
+
+        #middle input.check {
+            width: 100px;
+        }
+
+        #middle label {
+            width: 85px;
+            font-size: 14px;
+            display: block;
+            float: left;
+            text-align: right;
+            color: #666;
+            height: 27px;
+            line-height: 27px;
+        }
+
+        #middle input.btn {
+            border: none;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        /*登录*/
+        #denglu {
+            float: right;
+            width: 400px;
+            color: #333;
+        }
+
+            #denglu #email p, #denglu #phone p {
+                margin-bottom: 10px;
+            }
+
+            #denglu .box {
+                background: #fafafa;
+                overflow: hidden;
+                height: 154px;
+            }
+
+                #denglu .box #email, #denglu .box #phone {
+                    padding: 15px 30px;
+                    height: 154px;
+                }

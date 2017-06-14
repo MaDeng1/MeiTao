@@ -1,0 +1,159 @@
+﻿#middle {
+            width: 1440px;
+            height: auto;
+            /*border: 1px solid red;*/
+            margin: 0 auto;
+        }
+        /*导航*/
+
+        #menu {
+            width: 1440px;
+            height: 70px;
+            /*border: 1px solid blue;*/
+            margin: 0 auto;
+            background-color: #808080;
+        }
+
+            #menu li {
+                float: left;
+                height: 70px;
+                line-height: 70px;
+                text-align: center;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+                #menu li a {
+                    color: white;
+                }
+
+                #menu li.logo {
+                    margin-left: 200px;
+                }
+
+                #menu li.last {
+                    margin-left: 60px;
+                   
+                }
+                    #menu li.last a {
+                        color:orange;
+                    }
+                #menu li.ziti:hover {
+                    background-color: #3e3d3d;
+                }
+        /*中部*/
+        #content {
+            margin: 0 auto;
+            width: 1440px;
+        }
+        /*底部*/
+        #bottom {
+            width: 1014px;
+            height: auto;
+            margin: 0 auto;
+            /*border: 1px solid blue;*/
+            overflow: hidden;
+        }
+
+            #bottom #tab1 {
+                width: 1003px;
+                height: auto;
+                margin: 0 auto;
+                overflow: hidden;
+                margin-bottom: 10px;
+                margin-top: 0px;
+            }
+
+            #bottom dl {
+                float: left;
+                width: 320px;
+                height: 295px;
+                margin-top: 5px;
+                margin-left: 5px;
+                border: 1px solid #dedede;
+                padding-left: 7px;
+                padding-top: 5px;
+            }
+
+            #bottom h2 {
+                background-image: url(../images/topic/ztbg.jpg);
+                background-repeat: no-repeat;
+                line-height: 51px;
+                height: 51px;
+                padding-left: 20px;
+            }
+
+            #bottom dl dd {
+                line-height: 25px;
+                padding-left: 10px;
+            }
+
+                #bottom dl dd.name {
+                    font-weight: bold;
+                    font-size: 13px;
+                }
+
+                #bottom dl dd span.price {
+                    color: orange;
+                    font: bold 16px Verdana;
+                }
+
+                #bottom dl dd span.number {
+                    margin-right: 110px;
+                }
+
+        #tab2 {
+            width: 1003px;
+            height: auto;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        #tab3 {
+            width: 1003px;
+            height: auto;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        #tab4 {
+            width: 1003px;
+            height: auto;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        #tab5 {
+            width: 1003px;
+            height: auto;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        #list {
+            width: 117px;
+            height: 322px;
+            position: fixed;
+            right: 0px;
+            top: 200px;
+            background-color: #ccc;
+        }
+
+            #list ul li {
+                height: 45px;
+                line-height: 45px;
+                border-bottom: 1px solid orange;
+                text-align: center;
+            }
+
+                #list ul li.title {
+                    background-color: orange;
+                }

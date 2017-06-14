@@ -1,0 +1,339 @@
+﻿body {
+}
+   #nav, #mtop, #mbottom {
+            width:985px;
+            margin:0px auto;
+           
+        }
+                #mbottom,#mtop {
+             overflow:hidden;
+        }
+        /*导航*/
+        #allnav {
+            width:100%;
+            background-color:#ff7701;
+            height:39px;
+            border:1px solid #ff7701;
+        }
+        #nav {
+            height:39px;
+        }
+                #nav a { 
+           font-family:"微软雅黑"; 
+        }
+        #nav>ul>li {
+            float:left;
+            line-height:39px;
+            margin-left:20px;
+            margin-right:20px;
+            
+        }
+            #nav a:hover {
+                color:white;
+            }
+        .fenlei2 {
+            margin-left:5px;
+        }
+
+        .menulist {
+            position:relative;
+        }
+        .menulist>ul {
+            background-color:#ff7701;
+            text-align:center;
+            top:35px;
+            left:-22px;
+            position:absolute;
+            width:128px;
+        }
+
+        #nav>ul>li>ul>li {
+            float:none;
+        }
+            #nav>ul>li>ul>li>a {
+                 float:none;
+            }
+            #nav >ul >li.menulist span{
+                background-image:url(../images/arrow-down.gif);
+                background-repeat:no-repeat;
+                display:block;
+                width:15px;
+                height:10px;
+                float:right;
+                margin-top:14px;
+             margin-left:-5px;
+            }
+                         /*三级菜单*/
+#nav>ul>li>ul>li>ul {
+position:absolute;
+ width:0px;
+ overflow:hidden;
+top:0px;
+ left:128px;
+ background-color:#ff7701;
+ height:110px;
+}
+    #nav > ul > li > ul > li > ul > li {
+    height:20px;
+    width:70px;
+    }
+        /*上方部分*/
+        #navlist {
+            float:left;
+            width:121px;
+            height:273px;
+            /*border:1px solid #963;*/
+            margin-right:5px;
+        }
+        #content {
+            float:left;
+            width:850px;
+            height:273px;
+        }
+        #alltypesearch {
+            height:83px;
+            /*border:1px solid #03f;*/
+        }
+        .typesearch {
+            border:1px solid white;
+            width:800px;
+            height:25px;
+            margin-left:35px;
+        }
+                .typesearch a { 
+           font-family:"微软雅黑"; 
+           font-size:13px;
+        }
+       .typesearch ul li {
+            float:left;
+            line-height:25px;
+            margin-left:10px;
+            margin-right:10px;
+        }
+        .ziti,.ziti2,.ziti3 {
+            font-weight:bolder;
+            margin-left:20px;
+            font-size:13px;
+            margin-top:1px;
+        }
+        .ziti1 {
+             float:none;
+        }
+        .typesearch ul li.ziti span {
+                background-image:url(../images/icon.gif);
+                background-position:0px -21px;
+                display:block;
+                width:16px;
+                height:17px;
+                float:left;
+                margin-top:2px;
+                margin-left:-17px;
+        }
+                .typesearch ul li.ziti3 span {
+                background-image:url(../images/icon.gif);
+                background-position:0px -45px;
+                display:block;
+                width:16px;
+                height:17px;
+                float:left;
+                margin-top:3px;
+                margin-left:-17px;
+        }
+                        .typesearch ul li.ziti2 span {
+                background-image:url(../images/icon.gif);
+                background-position:0px 0px;
+                display:block;
+                width:16px;
+                height:17px;
+                float:left;
+                margin-top:3px;
+                margin-left:-17px;
+        }
+        #week {
+            height:185px;
+            /*border:1px solid #f00;*/
+
+        }
+            #week table {
+                margin-left:8px;
+            }
+
+            /*下方部分*/
+        #allgoods {
+            width:735px;
+            /*border:1px solid #c0c;*/
+            height:2020px;
+            float:left;
+        }
+        #side {
+            width:240px;
+            float:right;
+            /*border:1px solid #6f9;*/
+            height:2020px;
+        }
+        #tuangou {
+            margin-top:15px;
+        }
+            #tuangou span {
+                background-image:url(../images/icon.gif);
+                background-position:0px -64px;
+                display:block;
+                width:16px;
+                height:17px;
+                float:left;
+                margin-top:-4px;
+            }
+             /*下左*/    
+        #goods {
+            overflow:hidden;
+            width:720px;
+            height:1970px;
+            margin-top:5px;
+            /*border:1px solid blue;*/
+        }
+        #goods dl {
+            width:350px;
+            height:320px;
+            border:1px solid #ccc;
+            margin:3px;
+            float:left;
+        }
+            #goods dl dt.dttxt {
+                position:relative;
+            }
+                #goods dl dt.dttxt p {
+                    height:30px;
+                    line-height:30px;
+                    text-align:center;
+                    color:white;
+                    position:absolute;
+                    left:0px;
+                    bottom:0px;
+                    opacity:0.5;
+                    display:none;
+                    background-color:black;
+                    width:100%;
+                    margin-bottom:2px;
+                }
+                #goods dl dt.dttxt:hover p {
+                    display:block;
+                }
+        #goods dl dd {
+            line-height:25px;
+            padding-left:17px;
+            font-size:13px;
+        }
+        .name {
+            font-weight:bolder;
+            font-size:13px; 
+        }
+         .discount {
+                color:orange;
+                font:bold 16px Verdana;
+                
+            }
+            .price {
+                text-decoration:line-through;
+            }
+            /*下右*/
+        #hottopic {
+            border:1px solid #ccc;
+            margin-top:35px;
+            margin-bottom:17px;
+        }
+        #hotbuy {
+            border:1px solid #ccc;
+            margin-top:17px;
+            margin-bottom:17px;
+         }
+        #hottopic h2 {
+            margin-left:17px;
+            height:40px;
+            line-height:40px;
+        }
+            #hotbuy h2 {
+            height:40px;
+            line-height:40px;
+            }
+        #hotbuy {
+            padding-left:17px;
+            padding-right:17px;
+        }
+            #hotbuy dl dd {
+            line-height:25px;
+            padding-left:17px;
+            font-size:13px;
+            }
+            #hotbuy dl {
+                border-bottom:1px dashed #ccc;
+                margin-bottom:11px;
+            }
+                #hotbuy dl.last {
+                    border:none;
+                }
+        #price {
+            background-image: url(../images/pricebg.JPG);
+            background-repeat:no-repeat;
+            height:66px;
+            padding-top:70px;
+            padding-left:70px;
+            margin-bottom:14px;
+            border:1px solid #ccc;
+            padding-bottom:20px;
+            position:relative;
+        }
+            #price a {
+                color:red;
+            }
+                #price a:hover {
+                    text-decoration:underline;
+                }
+            #price  ul {
+                height:132px;
+               
+            }
+                #price ul li {
+                    height:22px;
+                    line-height:22px;
+                }
+            #lastview {
+            border:1px solid #ccc;
+            padding-right:17px;
+            padding-left:17px;
+
+        }
+            #lastview h2 {
+                float:left;
+                height:40px;
+                line-height:40px;
+            }
+            #lastview p {
+                float:right;
+                height:40px;
+                line-height:40px;
+            }
+        #lastview dl {
+            width:200px;
+            height:70px;
+            margin-bottom:11px;
+            clear:both;
+            border-bottom:1px dashed #ccc;
+        }
+        #lastview dl dt {
+                    float:left;
+                    margin-right:10px;
+                }
+            #lastview dl dd {
+                font-size:11px;
+                height:25px;
+                line-height:25px;
+            }
+            #lastview dl.last1 {
+                border:none;
+            }
+            /*广告*/
+        #guanggao {
+            position:fixed;
+            right:0px;
+            top:200px;
+        }

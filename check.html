@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>结算</title>
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/check.css" rel="stylesheet" />
+    <script src="gs/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#nav>ul>li.menulist").hover(function () {
+                $("#nav>ul>li.menulist>ul").stop().slideDown(500);
+            }, function () {
+                $("#nav>ul>li.menulist>ul").stop().slideUp(500);
+            });
+        });
+    </script>
+</head>
+<body>
+    <!--头部-->
+    <iframe src="head.html" width="100%" frameborder="0" scrolling="no" height="115px"></iframe>
+    <!--导航栏-->
+    <div id="allnav">
+        <div id="nav">
+            <ul>
+                <!--二级菜单-->
+                <li class="menulist">
+                    <a href="#" class="fenlei2">全部商品分类</a><span></span>
+                    <ul>
+                        <li><a href="#">美食</a></li>
+                        <li><a href="#">旅游</a></li>
+                        <li><a href="#">酒店</a></li>
+                        <li><a href="#">电影</a></li>
+                        <li><a href="#">KTV</a></li>
+                        <li><a href="#">时尚</a></li>
+                        <li><a href="#">生活服务</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">团购</a></li>
+                <li><a href="#">美食</a></li>
+                <li><a href="#">电影</a></li>
+                <li><a href="#">KTV</a></li>
+                <li><a href="#">酒店订票</a></li>
+                <li><a href="#">购物</a></li>
+                <li><a href="#">品牌特卖</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--中部-->
+    <div id="middle">
+        <div id="left">
+            <p class="logo">
+                <img src="images/cart/step2.jpg" />
+            </p>
+            <h3 class="biaoti1">项目名称及数量：</h3>
+            <ul class="liebiao1">
+                <li>欢乐空间量贩式KTV：欢唱套餐2选1，国家法定节假日需到店另付20元，可升级</li>
+                <li>途乐时尚主题量贩式KTV：任选1小时欢唱，可升级，提供免费   Wifi</li>
+            </ul>
+            <p class="fenge"></p>
+            <h3 class="biaoti2">接收美淘劵密码的手机号：</h3>
+            <p class="ziti1"><span>130****4939</span>，凭美淘劵密码去商家消费。</p>
+            <p class="fenge"></p>
+            <h3 class="biaoti3">应付金额<span>&yen;43.9</span></h3>
+            <ul class="liebiao2">
+                <li><span></span>网上银行支付（支持储蓄卡和信用卡）<br />
+                    <input type="radio" name="bank" checked="checked" />
+                    <img src="images/cart/jhbank.jpg" align="middle" />
+                                        <input type="radio" name="bank" checked="checked" />
+                    <img src="images/cart/jtbank.jpg" align="middle" />
+                                        <input type="radio" name="bank" checked="checked" />
+                    <img src="images/cart/zgbank.jpg" align="middle" /><br />
+                                        <input type="radio" name="bank" checked="checked" />
+                    <img src="images/cart/xybank.jpg" align="middle" />
+                                        <input type="radio" name="bank" checked="checked" />
+                    <img src="images/cart/zsbank.jpg" align="middle" />
+                                        <input type="radio" name="bank" checked="checked" />
+                    <img src="images/cart/gdbank.jpg" align="middle" />
+                </li>
+                <li><span></span>支付宝/财付通支付<br />
+                                                            <input type="radio" name="other"/>
+                    <img src="images/cart/zfb.jpg" align="middle" />
+                                                            <input type="radio" name="other"/>
+                    <img src="images/cart/cft.jpg" align="middle" />
+                </li>
+            </ul>
+            <div id="last">
+            <h3 class="biaoti4">支付：&yen;43.9</h3>
+            <p class="logo2">
+                <img src="images/cart/fk.jpg" />
+            </p>
+                </div>
+        </div>
+        <div id="right">
+            <h2>请放心购买</h2>
+            <dl>
+                <dt><img src="images/cart/warn.jpg" /></dt>
+                <dd>采用网银和第三方平台支付，</dd>
+                <dd>最大限度保证您支付安全。</dd>
+            </dl>
+            <dl>
+                <dt><img src="images/cart/ie.jpg" /></dt>
+                <dd>为了支付便捷，建议windows用户使用IE浏览器支付。</dd>
+            </dl>
+            <h2>支付帮助？</h2>
+            <ul>
+                <li><a href="#">没有开通网上银行如何购买？</a></li>
+                <li><a href="#">没找到我常用的网上银行？</a></li>
+                <li><a href="#">什么是地方银行？</a></li>
+                <li><a href="#">无法跳转到对应的支付页面支付？</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--尾部-->
+    <iframe src="foot.html" width="100%" frameborder="0" scrolling="no" height="200px"></iframe>
+</body>
+</html>

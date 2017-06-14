@@ -1,0 +1,333 @@
+﻿body {
+}
+        #middle {
+            width: 985px;
+            margin: 0 auto;
+            height: auto;
+            /*border: 1px solid blue;*/
+        }
+        /*导航*/
+        #allnav {
+            width: 100%;
+            background-color: #ff7701;
+            height: 39px;
+            border: 1px solid #ff7701;
+        }
+
+        #nav {
+            width: 985px;
+            height: 39px;
+            margin: 0 auto;
+        }
+
+            #nav a {
+                font-family: "微软雅黑";
+                color: white;
+            }
+
+            #nav ul li {
+                float: left;
+                line-height: 39px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+                #nav ul li.menulist span {
+                background-image:url(../images/arrow-down.gif);
+                background-repeat:no-repeat;
+                display:block;
+                width:15px;
+                height:10px;
+                float:right;
+                margin-top:15px;
+                }
+            #nav a:hover {
+                color: black;
+            }
+
+        .fenlei2 {
+            margin-left: 5px;
+        }
+
+
+
+        .menulist {
+            position: relative;
+        }
+
+            .menulist ul {
+                background-color: #ff7701;
+                text-align: center;
+                top: 35px;
+                left: -22px;
+                position: absolute;
+                width: 128px;
+                display: none;
+                z-index:100;
+            }
+
+        #nav ul li ul li {
+            float: none;
+        }
+
+            #nav ul li ul li a {
+                float: none;
+            }
+        /*中部-上方*/
+        #top {
+            width: 985px;
+            margin: 0px auto;
+            height: 385px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding-top: 20px;
+            margin-bottom: 20px;
+            overflow:hidden;
+        }
+
+        #t1 {
+            width: 985px;
+            margin: 0px auto;
+            height: 78px;
+            overflow: hidden;
+        }
+
+        #top ul li {
+            float: left;
+        }
+
+        .logo {
+            width: 97px;
+            height: 78px;
+            background-image: url(../images/cart/g1.jpg);
+            background-repeat: no-repeat;
+            margin-left: 50px;
+        }
+
+        .gw {
+            width: 100px;
+            height: 78px;
+            line-height: 78px;
+            font-weight: bolder;
+            font-size: 15px;
+        }
+
+        .logo2 {
+            width: 660px;
+            height: 15px;
+            padding-top: 20px;
+            background-image: url(../images/cart/step1.jpg);
+            background-repeat: no-repeat;
+            margin-top: 23px;
+        }
+
+        #t2 table {
+            border: 1px solid #dedede;
+            width: 942px;
+            height: 223px;
+            margin: 0 auto;
+            text-align: center;
+            clear: both;
+        }
+
+            #t2 table tr.table1 {
+                font-weight: bolder;
+            }
+            #t2 table tr td.xuanze {
+                width:50px;
+                text-align:center;
+               line-height:50px;
+            }
+            #t2 table tr td.xuanze1 {
+                width:70px;
+            padding-left:15px;
+            /*border:1px solid red;*/
+            }
+        #t2 table tr td dl dt {
+            float: left;
+            width: 75px;
+            height: 46px;
+            margin-right: 10px;
+        }
+
+        #t2 table tr td dl dd {
+            font-size: 12px;
+            width: 265px;
+            text-align: left;
+        }
+
+        #t2 table tr td.table2 {
+            width: 260px;
+            /*border:1px solid red;*/
+        }
+
+        .btn {
+            border: 3px solid #dedede;
+            background-color: white;
+            width: 30px;
+            height: 20px;
+            line-height: 20px;
+        }
+
+        .txt {
+            width: 80px;
+            height: 40px;
+            border: 3px solid #dedede;
+            text-align: center;
+            font: 15px/40px Verdana;
+        }
+
+            .txt:hover {
+                border: 3px solid red;
+            }
+
+          #t2 table tr {
+            height: 50px;
+        }
+            #t2 table tr td {
+              border-bottom: 1px dashed #dedede;
+            }
+        .discount {
+            color: orange;
+            font: bold 18px Verdana;
+        }
+
+        #money {
+            text-align: right;
+            font-size: 12px;
+            border:none;
+        }
+
+        #top #tijiao {
+            
+            display:block;
+            width:162px;
+            height:66px;
+            background-image:url(../images/cart/tj.png);
+            background-repeat:no-repeat;
+            float:right;
+            margin-right:20px;
+        }
+#quanxuan {
+float:left;
+margin-left:30px;
+font-size:15px;
+}
+        /*中部-下方*/
+        #bottom {
+            border: 1px solid #ccc;
+            padding-top: 20px;
+            overflow: hidden;
+           margin-bottom:20px;
+        }
+
+            #bottom dl {
+                float: left;
+                width: 210px;
+                height: 222px;
+                margin-right: 20px;
+                margin-bottom:20px;
+            }
+
+                #bottom dl dd {
+                    line-height: 25px;
+                }
+
+                    #bottom dl dd span {
+                        font: bold 15px Verdana;
+                        color: #c30;
+                    }
+
+                    #bottom dl dd.price {
+                        float: left;
+                    }
+
+                    #bottom dl dd.num {
+                        float: right;
+                    }
+
+                    #bottom dl dd.add {
+                        clear: both;
+                        float: right;
+                    }
+
+                        #bottom dl dd.add a {
+                            color: #f90;
+                        }
+
+                            #bottom dl dd.add a:hover {
+                                text-decoration: line-through;
+                            }
+
+                        #bottom dl dd.add span {
+                            background-image: url(../images/icon.gif);
+                            display: block;
+                            width: 18px;
+                            height: 33px;
+                            background-position: 0px -85px;
+                            float: left;
+                            margin-top: 2px;
+                        }
+            .diyi {
+                margin-left:20px;
+            }
+            /*隐藏div*/
+#yincang {
+    position:fixed;
+    top:0px;
+    left:0px;
+      width:100%;
+    height:100%;
+    display:none;
+}
+#yincang1 {
+    position:absolute;
+     background-color:black;
+    opacity:0.3;
+    width:100%;
+    height:100%;
+
+}
+#yincanglist {
+   
+    position:fixed;
+    top:40%;
+    left:40%;
+    border:2px solid black;
+    width:250px;
+   height:150px;
+}
+#title,#foot {  
+   height:25%;
+}
+#title {
+    background-color:orange;
+    color:white;
+    font-size:14px;
+     line-height:35px;
+}
+    #title .ziti1 {
+        padding-left:10px;
+        padding-right:130px;
+    }
+    #title .ziti2 {
+font-size:20px;    
+color:white;
+    }
+        #title .ziti2:hover {
+        color:white;
+        }
+#foot {
+       background-color:#ccc;
+       text-align:right;
+}
+#middle1 {
+    height:50%;
+    text-align:center;
+    font-size:18px;    
+    background-color:white;
+    line-height:80px;
+}
+#foot input {
+    margin-top:5px;
+padding:5px;
+}

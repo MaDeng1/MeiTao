@@ -1,0 +1,357 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>美淘网</title>
+    <!--样式表-->
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/Main.css" rel="stylesheet" />
+    <script type="text/javascript" src="gs/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+
+
+        $(function () {
+            var stop = false;
+            var num = 0;
+            setInterval(function () {
+                if (stop) return;
+                $("#pricelist>ul").children("li").first().animate({ "margin-top": num-- }, 0, function () {
+                    var intop = $(this);
+                    if (!intop.is(":animated")) {
+                        if ((-num) > intop.height()) {
+                            intop.css({ "margin-top": 0 }).appendTo($("#pricelist>ul"));
+                            num = 0;
+                        }
+                    }
+                });
+            }, 50);
+            $("#pricelist>ul").mouseover(function () {
+                stop = true;
+            });
+            $("#pricelist>ul").mouseout(function () {
+                stop = false;
+            });
+
+          
+            $(".menulistul").parent().hover(function () {
+
+                $("#nav ul.menulistul").stop().animate({width:"70px"},1000);
+            }, function () {
+               
+                $("#nav ul.menulistul").stop().animate({ width: "0px" }, 1000);
+            });
+        });
+
+
+
+
+    </script>
+</head>
+<body>
+    <!--头部-->
+    <iframe src="head.html" width="100%" frameborder="0" scrolling="no" height="115px"></iframe>
+    <!--中部-->
+    <div id="middle">
+        <!--导航-->
+        <div id="allnav">
+            <div id="nav">
+                <ul>
+                    <!--二级菜单-->
+                    <li class="menulist">
+                        <a href="#" class="fenlei2">全部商品分类</a><span></span>
+                        <ul>
+                            <li><a href="#">美食</a></li>
+                            <li><a href="#">旅游</a></li>
+                            <li style="position: relative;"><a href="#">酒店</a>
+                                        <ul  class="menulistul">
+                                            <li><a href="hottopic.html">豪华酒店</a></li>
+                                            <li><a href="hottopic.html">公寓酒店</a></li>
+                                            <li><a href="hottopic.html">度假首选</a></li>
+                                            <li><a href="hottopic.html">经济有爱</a></li>
+                                            <li><a href="hottopic.html">客栈情怀</a></li>
+                                        </ul>
+                            </li>
+                            <li><a href="#">电影</a></li>
+                            <li><a href="#">KTV</a></li>
+                            <li><a href="#">时尚</a></li>
+                            <li><a href="#">生活服务</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">团购</a></li>
+                    <li><a href="#">美食</a></li>
+                    <li><a href="#">电影</a></li>
+                    <li><a href="#">KTV</a></li>
+                    <li><a href="#">酒店订票</a></li>
+                    <li><a href="#">购物</a></li>
+                    <li><a href="#">品牌特卖</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--上方部分-->
+        <div id="mtop">
+            <!--二级菜单所在div-->
+            <div id="navlist"></div>
+            <div id="content">
+                <div id="alltypesearch">
+                    <div class="typesearch">
+                        <ul>
+                            <li class="ziti2"><span></span>热门团购</li>
+                            <li><a href="#">代金劵</a></li>
+                            <li><a href="#">火锅</a></li>
+                            <li><a href="#">自助餐</a></li>
+                            <li><a href="#">KTV</a></li>
+                            <li><a href="#">电影</a></li>
+                            <li><a href="#">美发</a></li>
+                            <li><a href="#">川湘菜</a></li>
+                            <li><a href="#">足疗按摩</a></li>
+                            <li><a href="#">服装</a></li>
+                            <li><a href="#">烤肉</a></li>
+                        </ul>
+                    </div>
+                    <div class="typesearch">
+                        <ul>
+                            <li class="ziti"><span></span>热门商圈</li>
+                            <li><a href="#">武昌区</a></li>
+                            <li><a href="#">江汉区</a></li>
+                            <li><a href="#">汉阳区</a></li>
+                            <li><a href="#">江岸区</a></li>
+                            <li><a href="#">硚口区</a></li>
+                            <li><a href="#">青山区</a></li>
+                            <li><a href="#">光谷高新</a></li>
+                            <li class="ziti1"><a href="#">东西湖区</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="typesearch">
+                        <ul>
+                            <li class="ziti3"><span></span>本周精选</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="week">
+                    <table cellspacing="0">
+                        <tr>
+                            <td>
+                                <img src="images/week1.jpg" /></td>
+                            <td>
+                                <img src="images/week2.jpg" /></td>
+                            <td>
+                                <img src="images/week3.jpg" /></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--下方部分-->
+        <div id="mbottom">
+            <!--左边-->
+            <div id="allgoods">
+                <h5 id="tuangou"><span></span>团购精选</h5>
+                <div id="goods">
+                    <dl>
+                        <dt class="dttxt"><a href="#">
+                            <img src="images/good1.jpg" /></a>
+                            <p>洪山区光谷资本大厦4楼（光谷广场转盘旁）</p>
+                        </dt>
+                        <dd class="name">【首义汇/阅马场】 汉庭连锁酒店</dd>
+                        <dd>住宿1晚，房型4选1，免费提供WiFi，多张美淘劵</dd>
+                        <dd><span class="discount">¥119</span>门店价<span class="price">¥119</span></dd>
+                    </dl>
+
+                    <dl>
+                        <dt class="dttxt"><a href="detail.html" target="_blank">
+                            <img src="images/good2.jpg" /></a>
+                            <p>洪山区光谷资本大厦4楼（光谷广场转盘旁）</p>
+                        </dt>
+                        <dd class="name">【3店通用】 大渔铁板烧</dd>
+                        <dd>单人可口自助套餐，与精美菜品的一次冰火约会</dd>
+                        <dd><span class="discount">¥149</span>门店价<span class="price">¥224</span></dd>
+                    </dl>
+
+                    <dl>
+                        <dt class="dttxt"><a href="#">
+                            <img src="images/good3.jpg" /></a>
+                            <p>洪山区光谷资本大厦4楼（光谷广场转盘旁）</p>
+                        </dt>
+                        <dd class="name">【多城市】如家快捷酒店</dd>
+                        <dd>住宿1晚（标准双人床/商务大床房2选1）</dd>
+                        <dd><span class="discount">¥119</span>门店价<span class="price">¥199</span></dd>
+                    </dl>
+
+                    <dl>
+                        <dt class="dttxt"><a href="#">
+                            <img src="images/good4.jpg" /></a>
+                            <p>洪山区光谷资本大厦4楼（光谷广场转盘旁）</p>
+                        </dt>
+                        <dd class="name">【5店通用】 东北人烤肉</dd>
+                        <dd>代金券1张，代金券可叠加使用</dd>
+                        <dd><span class="discount">¥36</span>门店价<span class="price">¥50</span></dd>
+                    </dl>
+
+                    <dl>
+                        <dt class="dttxt"><a href="#">
+                            <img src="images/good5.jpg" /></a>
+                            <p>洪山区光谷资本大厦4楼（光谷广场转盘旁）</p>
+                        </dt>
+                        <dd class="name">【王家湾】 金逸影城</dd>
+                        <dd>2D电影票1张，可升级为3D电影票、VIP影厅</dd>
+                        <dd><span class="discount">¥30</span>门店价<span class="price">¥75</span></dd>
+                    </dl>
+
+                    <dl>
+                        <dt class="dttxt"><a href="#">
+                            <img src="images/good6.jpg" /></a>
+                            <p>洪山区光谷资本大厦4楼（光谷广场转盘旁）</p>
+                        </dt>
+                        <dd class="name">【光谷/鲁巷】 巨幕影城</dd>
+                        <dd>电影票1张，2D/3D可兑，另有升级方案</dd>
+                        <dd><span class="discount">¥25.5</span>门店价<span class="price">¥120</span></dd>
+                    </dl>
+
+                    <dl>
+                        <dt class="dttxt"><a href="#">
+                            <img src="images/good7.jpg" /></a>
+                            <p>洪山区光谷资本大厦4楼（光谷广场转盘旁）</p>
+                        </dt>
+                        <dd class="name">【多城市】 艳阳天酒家旅店</dd>
+                        <dd>住宿1晚，12家店任选1种房型，免费提供WiFi</dd>
+                        <dd><span class="discount">¥139</span>门店价<span class="price">¥234</span></dd>
+                    </dl>
+
+                    <dl>
+                        <dt class="dttxt"><a href="#">
+                            <img src="images/good8.jpg" /></a>
+                            <p>洪山区光谷资本大厦4楼（光谷广场转盘旁）</p>
+                        </dt>
+                        <dd class="name">【2店通用】 大地数字影院</dd>
+                        <dd>电影票1张，2D/3D可兑</dd>
+                        <dd><span class="discount">¥22.9</span>门店价<span class="price">¥60</span></dd>
+                    </dl>
+
+                    <dl>
+                        <dt class="dttxt"><a href="#">
+                            <img src="images/good9.jpg" /></a>
+                            <p>洪山区光谷资本大厦4楼（光谷广场转盘旁）</p>
+                        </dt>
+                        <dd class="name">【徐东大街】 新宿酒店</dd>
+                        <dd>商务复式A住宿一晚，轻松入住</dd>
+                        <dd><span class="discount">¥225</span>门店价<span class="price">¥368</span></dd>
+                    </dl>
+
+                    <dl>
+                        <dt class="dttxt"><a href="#">
+                            <img src="images/good10.jpg" /></a>
+                            <p>洪山区光谷资本大厦4楼（光谷广场转盘旁）</p>
+                        </dt>
+                        <dd class="name">【光谷/鲁巷】 发源地</dd>
+                        <dd>精选烫染2选1，免费提供WiFi</dd>
+                        <dd><span class="discount">¥99</span>门店价<span class="price">¥618</span></dd>
+                    </dl>
+
+                    <dl>
+                        <dt class="dttxt"><a href="#">
+                            <img src="images/good11.jpg" /></a>
+                            <p>洪山区光谷资本大厦4楼（光谷广场转盘旁）</p>
+                        </dt>
+                        <dd class="name">【19店通用】 精益眼镜</dd>
+                        <dd>配镜套餐，赠送眼镜1个，擦镜布1个</dd>
+                        <dd><span class="discount">¥338</span>门店价<span class="price">¥1440</span></dd>
+                    </dl>
+
+                    <dl>
+                        <dt class="dttxt"><a href="#">
+                            <img src="images/good12.jpg" /></a>
+                            <p>洪山区光谷资本大厦4楼（光谷广场转盘旁）</p>
+                        </dt>
+                        <dd class="name">【中南路/洪山广场】 中商广场</dd>
+                        <dd>现金卡1张，全场穿着类通用（个别专柜特例品牌除外）</dd>
+                        <dd><span class="discount">¥50</span>门店价<span class="price">¥100</span></dd>
+                    </dl>
+                </div>
+            </div>
+            <!--右边-->
+            <div id="side">
+                <!--第一块-->
+                <div id="hottopic">
+                    <h2>热门主题</h2>
+                    <a href="#">
+                        <img src="images/hottopic1.jpg" /></a>
+                    <a href="#">
+                        <img src="images/hottopic2.jpg" /></a>
+                    <a href="hottopic.html" target="_parent">
+                        <img src="images/hottopic3.jpg" /></a>
+                </div>
+                <!--第二块-->
+                <div id="hotbuy">
+                    <h2>热卖排行榜</h2>
+                    <dl>
+                        <dt><a href="#">
+                            <img src="images/hotbuy1.jpg" /></a></dt>
+                        <dd class="name">【武汉广场】武商摩尔国际电影城单人票</dd>
+                        <dd><span class="discount">¥25</span>每天1416人团购</dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">
+                            <img src="images/hotbuy2.jpg" /></a></dt>
+                        <dd class="name">【3店通用】万达国际影城电影票</dd>
+                        <dd><span class="discount">¥25</span>每天1166人团购</dd>
+                    </dl>
+                    <dl class="last">
+                        <dt><a href="#">
+                            <img src="images/hotbuy3.jpg" /></a></dt>
+                        <dd class="name">【武汉等】金汉斯烤肉自助餐</dd>
+                        <dd><span class="discount">¥46.75</span>每天468人团购</dd>
+                    </dl>
+                </div>
+
+                <!--第三块-->
+                <div id="price">
+                    <div id="pricelist" style="height: 66px; position: relative; overflow: hidden;">
+                        <ul style="height: 132px; position: relative;">
+                            <li>金汉斯 &nbsp;<a href="#">进行中</a></li>
+                            <li>兰蔻升级版小黑瓶 &nbsp;<a href="#">进行中</a></li>
+                            <li>苹果ipone 5s &nbsp;<a href="#">进行中</a></li>
+                            <li>HTC One max &nbsp;<a href="#">进行中</a></li>
+                            <li>三星最新平板电脑 &nbsp;<a href="#">进行中</a></li>
+                            <li>苹果 iPad Air &nbsp;<a href="#">进行中</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--第四块-->
+                <div id="lastview">
+                    <h2>最近浏览</h2>
+                    <p>清空</p>
+                    <dl>
+                        <dt><a href="#">
+                            <img src="images/lastview1.jpg" /></a></dt>
+                        <dd class="name">三星最新平板电脑</dd>
+                        <dd><span class="discount">¥0</span><span class="price">0</span></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">
+                            <img src="images/lastview2.jpg" /></a></dt>
+                        <dd class="name">中商广场提供现金卡</dd>
+                        <dd><span class="discount">¥50</span><span class="price">100</span></dd>
+                    </dl>
+                    <dl class="last1">
+                        <dt><a href="#">
+                            <img src="images/lastview3.jpg" /></a></dt>
+                        <dd class="name">金汉斯烤肉自助餐</dd>
+                        <dd><span class="discount">¥46</span><span class="price">58</span></dd>
+                    </dl>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--广告-->
+    <div id="guanggao">
+        <img src="images/ban.jpg" />
+    </div>
+    <!--尾部-->
+    <iframe src="foot.html" width="100%" frameborder="0" scrolling="no" height="200px"></iframe>
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿body {
+}
+        * {
+            margin:0px;
+            padding:0px;
+        }
+        body a {
+            list-style-type:none;
+            text-decoration:none;
+            color:#000;
+        }
+        a:hover {
+            color:#ff7701;
+        }
+
+        #fenge {
+            width:100%;
+            border-bottom:3px solid #ff6a00;
+        }
+        #yejiao {
+           
+            width:985px;
+            height:130px;
+            margin:0px auto;
+        }
+
+        #line {
+            width:985px;
+            height:80px;
+            margin:0 auto;
+            background-image:url(../images/未标题-1.jpg);
+            background-repeat:no-repeat;
+        }
+        .ziti1 {
+            font-size:13px;
+            font-weight:bolder;
+            padding-left:25px;
+           width:150px;
+         height:20px;
+         line-height:10px;
+         margin-left:10px;
+        }             
+                .ziti2 {   
+                    font-size:13px;   
+            padding-left:25px;
+           width:166px;
+        }
+        #ziti3 {
+            width:500px;
+            height:10px;
+            line-height:10px;
+            margin:0 auto;
+            margin-top:20px;
+        }

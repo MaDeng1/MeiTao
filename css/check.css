@@ -1,0 +1,222 @@
+﻿body {
+}
+ #middle {
+            width: 990px;
+            margin: 0 auto;
+            height: auto;
+            /*border: 1px solid blue;*/
+            overflow: hidden;
+            margin-top:20px;
+            margin-bottom:20px;
+        }
+        /*导航*/
+        #allnav {
+            width: 100%;
+            background-color: #ff7701;
+            height: 39px;
+            border: 1px solid #ff7701;
+        }
+
+        #nav {
+            width: 985px;
+            height: 39px;
+            margin: 0 auto;
+        }
+
+            #nav a {
+                font-family: "微软雅黑";
+                color: white;
+            }
+                #nav ul li.menulist span {
+                background-image:url(../images/arrow-down.gif);
+                background-repeat:no-repeat;
+                display:block;
+                width:15px;
+                height:10px;
+                float:right;
+                margin-top:15px;
+                }
+            #nav ul li {
+                float: left;
+                line-height: 39px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            #nav a:hover {
+                color: black;
+            }
+
+        .fenlei2 {
+            margin-left: 5px;
+        }
+
+
+        .menulist {
+            position: relative;
+        }
+
+            .menulist ul {
+                background-color: #ff7701;
+                text-align: center;
+                top: 35px;
+                left: -22px;
+                position: absolute;
+                width: 128px;
+                display: none;
+                z-index:100;
+            }
+
+        #nav ul li ul li {
+            float: none;
+        }
+
+            #nav ul li ul li a {
+                float: none;
+            }
+        /*中左*/
+        #left {
+            width: 703px;
+            height: 550px;
+            float: left;
+            border: 1px solid #dedede;  
+            position:relative;
+        }
+
+            #left p.logo {
+                height: 33px;
+                width: 679px;
+                margin: 0 auto;
+                margin-top: 10px;
+            }
+
+            #left h3.biaoti1 {
+                margin-top: 20px;
+                margin-left: 14px;
+                margin-bottom: 20px;
+            }
+
+            #left ul.liebiao1 {
+                list-style-type: disc;
+                margin-left: 40px;
+            }
+
+                #left ul.liebiao1 li {
+                    height: 25px;
+                    line-height: 25px;
+                    font-size: 11px;
+                }
+
+            #left h3.biaoti2 {
+                margin-top: 20px;
+                margin-left: 14px;
+                margin-bottom: 20px;
+            }
+
+            #left p.fenge {
+                width: 670px;
+                margin: 0 auto;
+                border-bottom: 2px dashed #dedede;
+            }
+
+            #left p.ziti1 {
+                height: 25px;
+                line-height: 25px;
+                margin-left: 14px;
+            }
+
+                #left p.ziti1 span {
+                    color: #fa6e1d;
+                    font-weight: bolder;
+                }
+
+            #left h3.biaoti3 {
+                margin-top: 20px;
+                margin-left: 14px;
+                margin-bottom: 40px;
+            }
+
+                #left h3.biaoti3 span {
+                    font: bold 18px Verdana;
+                    color: orange;
+                }
+
+            #left ul.liebiao2 {
+                margin-left: 60px;
+            }
+
+                #left ul.liebiao2 li {
+                    height: 25px;
+                    line-height: 25px;
+                    overflow:hidden;
+                }
+
+                    #left ul.liebiao2 li span {
+                        float: left;
+                        background-image: url(../images/cart/jt1.jpg);
+                        background-repeat: no-repeat;
+                        width: 15px;
+                        height: 13px;
+                        margin-top: 5px;
+                    }
+                    #left ul.liebiao2 li:hover {
+                        height:auto;
+                        cursor:pointer;
+                    }
+                        #left ul.liebiao2 li:hover span {
+                            background-image:url(../images/cart/jt2.jpg);
+                        }
+            #left h3.biaoti4 {
+                text-align: right;
+                margin-top: 30px;
+                margin-right: 20px;
+            }
+
+            #left p.logo2 {
+                text-align: right;
+                margin-top: 10px;
+                margin-right: 25px;
+            }
+            #left #last {
+                position:absolute;
+                bottom:20px;
+                right:10px;
+            }
+        /*中右*/
+        #right {
+            margin-left:5px;
+            width: 275px;
+            height: 333px;
+            float: right;
+            border: 1px solid #dedede;
+        }
+            #right h2 {
+                margin-top:10px;
+                margin-bottom:10px;
+                margin-left:20px;
+            }
+            #right dl {
+                width:230px;
+                height:60px;
+                margin:0 auto;
+                overflow:hidden;
+            }
+                #right dl dt {
+                    height:54px;
+                    width:62px;
+                    float:left;
+                }
+                #right dl dd {
+                    font-size:12px;
+                    width:240px;
+                    height:30px;
+                    line-height:30px;
+                }
+            #right ul {
+                margin-left:20px;
+            }
+            #right ul li{
+                 font-size:12px;
+                height:30px;
+                line-height:30px;
+            }

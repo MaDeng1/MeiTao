@@ -1,0 +1,20 @@
+﻿body {
+    font-size:13px;
+}
+* {
+    margin:0px;
+    padding:0px;
+}
+a img {
+    border:0px;
+}
+a {
+    text-decoration:none;
+    color:black;
+}
+    a:hover {
+        color:#ff7701;
+    }
+ul {
+    list-style-type:none;
+}

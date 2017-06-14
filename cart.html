@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>购物车</title>
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/cart.css" rel="stylesheet" />
+    <script type="text/javascript" src="gs/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        var newImg;
+        $(function () {
+            
+            $("#t2>table input[class='btn btnadd']").click(function () {
+                var num = parseInt($(this).prev().val());
+                num++;
+                $(this).prev().val(num);
+
+                var price = parseFloat($(this).parent().next().html().replace("¥", ""));
+               
+                var infoPrice = price * num;
+                $(this).parent().next().next().html("¥" + infoPrice);
+
+                var sumPrice = 0;
+                $("#t2>table td[title='price']").each(function () {
+                    sumPrice += parseFloat($(this).html().replace("¥", ""));
+                });
+                $("#spanTotal").html("¥" + sumPrice);
+
+                var num1 = 0;
+                $("#t2>table td input[type='text']").each(function () {
+                    num1 += parseFloat($(this).val());
+                });
+                $("#num").html(num1);
+            });
+
+            $("#t2>table input[class='btn btnminus']").click(function () {
+                var num = parseInt($(this).next().val());
+                num--;
+                if (num <1) {
+                    num = 1;
+                }
+                $(this).next().val(num);
+                var price = parseFloat($(this).parent().next().html().replace("¥", ""));
+
+                var infoPrice = price * num;
+
+                $(this).parent().next().next().html("¥" + infoPrice);
+                var sumPrice = 0;
+                $("#t2>table td[title='price']").each(function () {
+                    sumPrice += parseFloat($(this).html().replace("¥", ""));
+                });
+                $("#spanTotal").html("¥" + sumPrice);
+
+                var num1 = 0;
+                $("#t2>table td input[type='text']").each(function () {
+                    num1 += parseFloat($(this).val());
+                });
+                $("#num").html(num1);
+            });
+
+        
+            $(".table2 img").hover
+        (
+        function () {
+            newImg = $(this).clone();
+            newImg.css("position", "absolute");
+            newImg.css("top", "70px");
+            newImg.css("left", "80px");
+            newImg.css("width", "200px");
+            newImg.css("height", "100px");
+            $(this).parent().css("position", "relative");
+            $(this).parent().append(newImg);
+        
+        },
+        function () {
+            newImg.remove();
+        }
+        )
+            $("#nav>ul>li.menulist").hover(function () {
+                $("#nav>ul>li.menulist>ul").stop().slideDown(500);
+            }, function () {
+                $("#nav>ul>li.menulist>ul").stop().slideUp(500);
+            });
+
+            //checkbox选中事件
+            $("#btn1").change(function () {
+                if (this.checked) {
+                    $("#btn2").get(0).checked = true;
+                    $("#btn3").get(0).checked = true;
+                }
+                else {
+                    $("#btn2").get(0).checked = false;
+                    $("#btn3").get(0).checked = false;
+                }
+            });
+            //全选删除事件
+            $("#quanxuan").click(function () {
+                $("#yincang").show();
+                $("#yincang input[class='btn1']").click(function () {
+                    $("#yincang").hide();
+                    var count = 0;
+
+                    $("#t2>table tr td input[name='item']").each(function () {
+                        if (this.checked) {
+                            count++;
+                            $(this).parent().parent().remove();
+
+                            $("#btn1").get(0).checked = false;
+                            $("#spanTotal").html("0");
+                            $("#num").html("0");
+                        }
+                    });
+
+                    if (count == 0) {
+                        alert("没有选中对象");
+                    }
+                });
+
+
+
+            });
+            //遮盖层关闭事件
+            $("#yincang input[class='btn2']").click(function () {
+                $("#yincang").hide();
+            });
+
+            //遮盖层关闭事件
+            $("#yincang #title a[class='ziti2']").click(function () {
+                $("#yincang").hide();
+            });
+            //单击删除
+            $("#t2>table tr td>a[class='deletebtn1']").click(function () {
+                $("#yincang").show();
+                $("#yincang input[class='btn1']").click(function () {
+                    $("#yincang").hide();
+                    $("#t2>table tr td>a[class='deletebtn1']").parent().parent().remove();
+                });
+            });
+
+            $("#t2>table tr td>a[class='deletebtn2']").click(function () {
+                $("#yincang").show();
+                $("#yincang input[class='btn1']").click(function () {
+                    $("#yincang").hide();
+                    $("#t2>table tr td>a[class='deletebtn2']").parent().parent().remove();
+                });
+            });
+
+
+        });
+        
+
+       
+    </script>
+</head>
+<body>
+    <!--头部-->
+    <iframe src="head.html" width="100%" frameborder="0" scrolling="no" height="115px"></iframe>
+    <!--导航栏-->
+    <div id="allnav">
+        <div id="nav">
+            <ul>
+                <!--二级菜单-->
+                <li class="menulist">
+                    <a href="#" class="fenlei2">全部商品分类</a><span></span>
+                    <ul>
+                        <li><a href="#">美食</a></li>
+                        <li><a href="#">旅游</a></li>
+                        <li><a href="#">酒店</a></li>
+                        <li><a href="#">电影</a></li>
+                        <li><a href="#">KTV</a></li>
+                        <li><a href="#">时尚</a></li>
+                        <li><a href="#">生活服务</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">团购</a></li>
+                <li><a href="#">美食</a></li>
+                <li><a href="#">电影</a></li>
+                <li><a href="#">KTV</a></li>
+                <li><a href="#">酒店订票</a></li>
+                <li><a href="#">购物</a></li>
+                <li><a href="#">品牌特卖</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--中部-->
+    <div id="middle">
+        <!--上方-->
+        <div id="top">
+            <!--logo-->
+            <div id="t1">
+                <ul>
+                    <li class="logo"></li>
+                    <li class="gw">我的购物车</li>
+                    <li class="logo2"></li>
+                </ul>
+            </div>
+            <!--购物车信息-->
+            <div id="t2">
+                <table cellspacing="0" cellpadding="0">
+                    <tr class="table1">
+                        <td class="xuanze1"><input type="checkbox" name="name" id="btn1"/>全选</td>
+                        <td>项目</td>
+                        <td>状态</td>
+                        <td>类型/数量</td>
+                        <td>单价</td>
+                        <td>小计</td>
+                    </tr>
+                    <tr>
+                        <td class="xuanze">
+                            <input type="checkbox" name="item" id="btn2" /></td>
+                        <td class="table2">
+                            <dl>
+                                <dt>
+                                    <img src="images/cart/item1.jpg" /></dt>
+                                <dd>欢乐空间量贩式KTV：欢唱套餐2选1，国家法定节假日需到店另付20元，可升级</dd>
+                            </dl>
+                        </td>
+                        <td>可购买</td>
+                        <td>
+                                <input type="button" value="-" class="btn btnminus" />
+                                <input type="text" value="1" class="txt" />
+                                <input type="button" value="+" class="btn btnadd" />
+                        </td>
+                        <td>¥40</td>
+                        <td title="price">¥40</td>
+                        <td><a href="#" class="deletebtn1">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td class="xuanze">
+                            <input type="checkbox" name="item" id="btn3"/></td>
+                        <td class="table2">
+                            <dl>
+                                <dt>
+                                    <img src="images/cart/item2.jpg" /></dt>
+                                <dd>途乐时尚主题量贩式KTV：任选1小时欢唱，可升级，提供免费   Wifi</dd>
+                            </dl>
+                        </td>
+                        <td>可购买</td>
+                        <td>
+                                <input type="button" value="-" class="btn btnminus" />
+                                <input type="text" value="1" class="txt" />
+                                <input type="button" value="+" class="btn btnadd" />
+                        </td>
+                        <td>¥3</td>
+                        <td title="price">¥3</td>
+                        <td><a href="#" class="deletebtn2">删除</a></td>
+                    </tr>
+                    <tr>
+                        
+                        <td colspan="7" id="money"><a href="#" id="quanxuan">删除</a>已选<span class="discount" id="num">2</span>件商品 应付总额：<span class="discount" id="spanTotal">¥42.9</span></td>
+                    </tr>
+                </table>
+            </div>
+                <a href="check.html" target="_parent" id="tijiao"></a>
+        </div>
+        <!--下方-->
+        <div id="bottom">
+            <h2 class="diyi">购买了本团购的用户还看了</h2>
+            <dl class="diyi">
+                <dt><a href="#">
+                    <img src="images/cart/view1.jpg" /></a></dt>
+                <dd class="name">【西北湖】 金鲨国际美食百汇：自助餐1位，西北湖店需到店补差价...</dd>
+                <dd class="price"><span>¥118</span>门店价 138</dd>
+                <dd class="num">已售<span>1691</span></dd>
+                <dd class="add"><span></span><a href="#">加入购物车</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">
+                    <img src="images/cart/view2.jpg" /></a></dt>
+                <dd class="name">【西北湖】 金鲨国际美食百汇：自助餐1位，西北湖店需到店补差价...</dd>
+                <dd class="price"><span>¥118</span>门店价 138</dd>
+                <dd class="num">已售<span>2169</span></dd>
+                <dd class="add"><span></span><a href="#">加入购物车</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">
+                    <img src="images/cart/view3.jpg" /></a></dt>
+                <dd class="name">【西北湖】 金鲨国际美食百汇：自助餐1位，西北湖店需到店补差价...</dd>
+                <dd class="price"><span>¥198</span>门店价 238</dd>
+                <dd class="num">已售<span>349</span></dd>
+                <dd class="add"><span></span><a href="#">加入购物车</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">
+                    <img src="images/cart/view4.jpg" /></a></dt>
+                <dd class="name">【西北湖】 金鲨国际美食百汇：自助餐1位，西北湖店需到店补差价...</dd>
+                <dd class="price"><span>¥299</span>门店价 300</dd>
+                <dd class="num">已售<span>245</span></dd>
+                <dd class="add"><span></span><a href="#">加入购物车</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div id="yincang">
+        <div id="yincang1"></div>
+            <div id="yincanglist">
+                <div id="title">
+                    <font class="ziti1">删除时提示</font>
+                    <a href="#" class="ziti2">X</a>
+                </div>
+                    <div id="middle1">您真的要删除记录吗？</div>
+                    <div id="foot"><input type="button" name="name" value="确定" class="btn1" /><input type="button" name="name" value="取消" class="btn2" /></div>
+                
+            </div>
+      
+        </div>
+    <!--尾部-->
+    <iframe src="foot.html" width="100%" frameborder="0" scrolling="no" height="200px"></iframe>
+</body>
+</html>

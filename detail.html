@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>详情页面</title>
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/detail.css" rel="stylesheet" />
+        <script src="gs/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#nav>ul>li.menulist").hover(function () {
+                $("#nav>ul>li.menulist>ul").stop().slideDown(500);
+            }, function () {
+                $("#nav>ul>li.menulist>ul").stop().slideUp(500);
+            });
+        });
+        </script>
+</head>
+<body>
+    <!--头部-->
+    <iframe src="head.html" width="100%" frameborder="0" scrolling="no" height="115px"></iframe>
+    <!--导航栏-->
+    <div id="allnav">
+        <div id="nav">
+            <ul>
+                <!--二级菜单-->
+                <li class="menulist">
+                    <a href="#" class="fenlei2">全部商品分类</a><span></span>
+                    <ul>
+                        <li><a href="#">美食</a></li>
+                        <li><a href="#">旅游</a></li>
+                        <li><a href="#">酒店</a></li>
+                        <li><a href="#">电影</a></li>
+                        <li><a href="#">KTV</a></li>
+                        <li><a href="#">时尚</a></li>
+                        <li><a href="#">生活服务</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">团购</a></li>
+                <li><a href="#">美食</a></li>
+                <li><a href="#">电影</a></li>
+                <li><a href="#">KTV</a></li>
+                <li><a href="#">酒店订票</a></li>
+                <li><a href="#">购物</a></li>
+                <li><a href="#">品牌特卖</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="middle">
+        <!--中左-->
+        <div id="left">
+            <!--第一块-->
+            <div id="one">
+                <h2>武汉团购》美食团购》自助餐》大渔铁板烧</h2>
+                <ul class="picture">
+                    <li>
+                        <img src="images/good2.jpg" /></li>
+                    <li class="ps">
+                        <img src="images/view1.jpg" /></li>
+                    <li class="ps">
+                        <img src="images/view2.jpg" /></li>
+                    <li class="ps">
+                        <img src="images/view3.jpg" /></li>
+                    <li class="ps">
+                        <img src="images/view4.jpg" /></li>
+                </ul>
+                <ul class="info">
+                    <li>团购价：<span>&yen;149</span></li>
+                    <li>门店价：</li>
+                    <li>剩余时间：14小时40分11秒</li>
+                    <li>已经售出：<span>3895</span></li>
+                    <li>消费评分：4.4</li>
+                    <li>已有357人评价</li>
+                    <li class="txt">仅售149元！价值224元的大渔铁板烧单人可口自助套餐与精美菜品的一场冰火约会，好好慰劳自己吧。</li>
+                    <li class="buy"><a href="cart.html" target="_parent">
+                        <img src="images/intocart.gif" /></a></li>
+                </ul>
+            </div>
+            <!--第二块-->
+            <div id="two">
+                <div id="menu">
+                    <ul>
+                        <li class="one"><a href="#tab1">商家位置</a></li>
+                        <li><a href="#tab2">团购精选</a></li>
+                        <li><a href="#tab4">美淘推荐</a></li>
+                        <li><a href="#tab5">消费评价</a></li>
+                    </ul>
+                </div>
+                <div id="tab1">
+                    <h2>商家位置</h2>
+                    <dl>
+                        <dt>
+                            <img src="images/map.jpg" /></dt>
+                        <dd><span>大渔铁板烧（汉街万达店）</span><br />
+                            地址：武昌区汉街一号万达广场4楼4017铺<br />
+                            电话：027-87126609</dd>
+                        <dd><span>大渔铁板烧（国际广场店）</span><br />
+                            地址：江汉区解放大道武汉国际广场B座5楼<br />
+                            电话：027-85823026</dd>
+                        <dd><span>大渔铁板烧（花园道店）</span><br />
+                            地址：江汉区青年路308号花园道商业街A-112号<br />
+                            电话：027-85803792</dd>
+                    </dl>
+                </div>
+                <div id="tab2">
+                    <h2>团购详情</h2>
+                    <table cellpadding="0" cellspacing="0">
+                        <tr>
+                            <th>内容</th>
+                            <th>单价</th>
+                            <th>数量/规格</th>
+                            <th>小计</th>
+                        </tr>
+                        <tr>
+                            <th colspan="4">以下二选一</th>
+                        </tr>
+                        <tr>
+                            <td>周一至周四午餐二选一</td>
+                            <td>165元</td>
+                            <td>1位</td>
+                            <td>168元</td>
+                        </tr>
+                        <tr>
+                            <td>周五至周日晚餐二选一</td>
+                            <td>168元</td>
+                            <td>1位</td>
+                            <td>168元</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4">其他</th>
+                        </tr>
+                        <tr>
+                            <td>哈根达斯单球</td>
+                            <td>28元</td>
+                            <td>2球</td>
+                            <td>56元</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>价值：224元</p>
+                <p>美淘价：149元</p>
+                <ul>
+                    <li>周一至周四午餐二选一：周一至周四11:00-15:00,17:00-22:00</li>
+                    <li>周五至周日晚餐二选一：周五至周日11:00-15:00,17:00-22:00</li>
+                </ul>
+                <div id="tab3">
+                    <h3>购买须知</h3>
+                    <h3>有效期：<span>2013.10.17至2013.12.18（周末、法定节假日通用）</span></h3>
+                    <br />
+                    <h3>预约提醒：<span>请至少提前1天致电预约</span></h3>
+                    <h3>使用规则：</h3>
+                    <ul>
+                        <li>1.2米（含）以下儿童享原价的半价优惠，到店支付即可（不含自助餐外其他零点），1.2米（不含）以上需独立使用1张美淘劵</li>
+                        <li>团购用户表不可同时享受商家其他优惠</li>
+                        <li>部分菜品因时令原因有所不同，请以店内当日实际供应为准</li>
+                    </ul>
+                </div>
+                <div id="tab4">
+                    <h2>美淘推荐</h2>
+
+                    <img src="images/detail/ok1.jpg" />
+                    <font class="ziti">爱她就请她吃Haagen-Daze（单球2个）：哈根达斯冰淇淋1921年诞生于纽约市朗克斯市的一个家庭，创始人鲁本·马特斯立志要生产纯天然的、高质量、风味绝佳的冰淇淋产品，让世人享受真正高品质的冰淇淋美味。纽约时代杂志曾赋予哈根达斯”冰淇淋中的劳斯莱
+                            斯“的美名</font>
+
+
+                    <img src="images/detail/ok2.jpg" />
+                    <font>香芒芝士焗扇贝：扇贝拌上奶油汁，最后放上足量的芝士，上烤箱烤制。芝士与奶油汁的味道浓郁，香气飘散开来，品尝一口，会发现扇贝难以抵挡的鲜味更是让你垂涎三尺不止</font>
+
+                    <img src="images/detail/ok3.jpg" />
+                    <font>铁板蟹籽蒸蛋：鹅肝鱼子酱烘蛋，世界食材的烹饪，堪称经典。润滑爽口的松耳，入口即化的鹅肝，让你享受一次美味</font>
+
+
+                    <img src="images/detail/ok4.jpg" />
+                    <font>芝士青口贝：一道鲜味十足的海鲜大餐，浓浓的芝士淋在鲜美的青口贝上，搭配着爽口的鱼籽，一口吃下去，芝士香加上鲜香在嘴里，让你沉醉其中。</font>
+
+
+                </div>
+                <div id="tab5">
+                    <h2>消费评价</h2>
+                    <img src="images/detail/remark1.jpg" />
+                    <img src="images/detail/remark2.jpg" />
+                    <img src="images/detail/remark3.jpg" />
+                    <form>
+                        <input type="button" name="name1" value="1" />
+                        <input type="button" name="name2" value="2" />
+                        <input type="button" name="name3" value="3" />
+                        <input type="button" name="name4" value="4" />
+                        <input type="button" name="name5" value="5" />
+                        <input type="button" name="name6" value="6" />
+                        <input type="button" name="name7" value="7" />
+                        <input type="button" name="name8" value="8" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--中右-->
+        <div id="side">
+            <!--第一块-->
+            <div id="hottopic">
+                <h2>热门主题</h2>
+                <a href="#">
+                    <img src="images/hottopic1.jpg" /></a>
+                <a href="#">
+                    <img src="images/hottopic2.jpg" /></a>
+                <a href="hottopic.html" target="_parent">
+                    <img src="images/hottopic3.jpg" /></a>
+            </div>
+            <!--第二块-->
+            <div id="hotbuy">
+                <h2>热卖排行榜</h2>
+                <dl>
+                    <dt><a href="#">
+                        <img src="images/hotbuy1.jpg" /></a></dt>
+                    <dd class="name">【武汉广场】武商摩尔国际电影城单人票</dd>
+                    <dd><span class="discount">¥25</span>每天1416人团购</dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">
+                        <img src="images/hotbuy2.jpg" /></a></dt>
+                    <dd class="name">【3店通用】万达国际影城电影票</dd>
+                    <dd><span class="discount">¥25</span>每天1166人团购</dd>
+                </dl>
+                <dl class="last">
+                    <dt><a href="#">
+                        <img src="images/hotbuy3.jpg" /></a></dt>
+                    <dd class="name">【武汉等】金汉斯烤肉自助餐</dd>
+                    <dd><span class="discount">¥46.75</span>每天468人团购</dd>
+                </dl>
+            </div>
+
+            <!--第三块-->
+            <div id="price">
+                <ul>
+                    <li>金汉斯 &nbsp;<a href="#">进行中</a></li>
+                    <li>兰蔻升级版小黑瓶 &nbsp;<a href="#">进行中</a></li>
+                    <li>苹果ipone 5s &nbsp;<a href="#">进行中</a></li>
+                    <li>HTC One max &nbsp;<a href="#">进行中</a></li>
+                    <li>三星最新平板电脑 &nbsp;<a href="#">进行中</a></li>
+                    <li>苹果 iPad Air &nbsp;<a href="#">进行中</a></li>
+                </ul>
+            </div>
+            <!--第四块-->
+            <div id="lastview">
+                <h2>最近浏览</h2>
+                <p>清空</p>
+                <dl>
+                    <dt><a href="#">
+                        <img src="images/lastview1.jpg" /></a></dt>
+                    <dd class="name">三星最新平板电脑</dd>
+                    <dd><span class="discount">¥0</span><span class="price">0</span></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">
+                        <img src="images/lastview2.jpg" /></a></dt>
+                    <dd class="name">中商广场提供现金卡</dd>
+                    <dd><span class="discount">¥50</span><span class="price">100</span></dd>
+                </dl>
+                <dl class="last1">
+                    <dt><a href="#">
+                        <img src="images/lastview3.jpg" /></a></dt>
+                    <dd class="name">金汉斯烤肉自助餐</dd>
+                    <dd><span class="discount">¥46</span><span class="price">58</span></dd>
+                </dl>
+
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <iframe src="foot.html" width="100%" frameborder="0" scrolling="no" height="200px"></iframe>
+</body>
+</html>
